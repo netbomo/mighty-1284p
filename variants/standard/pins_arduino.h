@@ -5,7 +5,7 @@
 
 // ATMEL ATMEGA1284P
 //
-//                   +---\/---+
+//                       +---\/---+
 //           (D 0) PB0  1|        |40  PA0 (AI 0 / D24)
 //           (D 1) PB1  2|        |39  PA1 (AI 1 / D25)
 //      INT2 (D 2) PB2  3|        |38  PA2 (AI 2 / D26)
@@ -26,7 +26,7 @@
 //      PWM (D 12) PD4 18|        |23  PC1 (D 17) SDA
 //      PWM (D 13) PD5 19|        |22  PC0 (D 16) SCL
 //      PWM (D 14) PD6 20|        |21  PD7 (D 15) PWM
-//                   +--------+
+//                       +--------+
 //
 
 /*
@@ -40,10 +40,10 @@
 
 #define NUM_DIGITAL_PINS            32
 #define NUM_ANALOG_INPUTS           8
-#define analogInputToDigitalPin(p)  ((p < NUM_ANALOG_INPUTS) ? (p) + 24 : -1)
+#define analogInputToDigitalPin(p)  ( (p) < NUM_ANALOG_INPUTS ? (p) + 24 : -1 )
 #define digitalPinToAnalogPin(p)    ( (p) >= 24 && (p) <= 31 ? (p) - 24 : -1 )
-#define analogPinToChannel(p)       ((p) < NUM_ANALOG_INPUTS) ? (p) : ((p)  >=  24) ? ((p) - 24) : -1    //required macro for mighty-1284p core
-#define digitalPinHasPWM(p)         ((p) == 3 || (p) == 4 || (p) == 6 || (p) == 7 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15)
+#define analogPinToChannel(p)       ( (p) < NUM_ANALOG_INPUTS ? (p) : (p) >=  24 ? (p) - 24 : -1 )    //required macro for mighty-1284p core
+#define digitalPinHasPWM(p)         ( (p) == 3 || (p) == 4 || (p) == 6 || (p) == 7 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15 )
 
 static const uint8_t SS   = 4;
 static const uint8_t MOSI = 5;
