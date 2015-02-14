@@ -42,7 +42,7 @@
 #define NUM_ANALOG_INPUTS           8
 #define analogInputToDigitalPin(p)  ( (p) < NUM_ANALOG_INPUTS ? (p) + 24 : -1 )
 #define digitalPinToAnalogPin(p)    ( (p) >= 24 && (p) <= 31 ? (p) - 24 : -1 )
-#define analogPinToChannel(p)       ( (p) < NUM_ANALOG_INPUTS ? (p) : (p) >=  24 ? (p) - 24 : -1 )    //required macro for mighty-1284p core
+#define analogPinToChannel(p)       ( (p) < NUM_ANALOG_INPUTS ? (p) : (p) >= 24 ? (p) - 24 : -1 )    //required macro for mighty-1284p core
 #define digitalPinHasPWM(p)         ( (p) == 3 || (p) == 4 || (p) == 6 || (p) == 7 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15 )
 
 static const uint8_t SS   = 4;
@@ -63,7 +63,7 @@ static const uint8_t A5 = 29;
 static const uint8_t A6 = 30;
 static const uint8_t A7 = 31;
 
-#define digitalPinToPCICR(p)    ( (p) >= 0 && (p) < NUM_DIGITAL_PINS ? (&PCICR) : (uint8_t *)0 )
+#define digitalPinToPCICR(p)    ( (p) >= 0 && (p) < NUM_DIGITAL_PINS ? &PCICR : (uint8_t *)0 )
 #define digitalPinToPCICRbit(p) ( (p) <= 7 ? 1 : (p) <= 15 ? 3 : (p) <= 23 ? 2 : 0 )
 #define digitalPinToPCMSK(p)    ( (p) <= 7 ? &PCMSK1 : (p) <= 15 ? &PCMSK3 : (p) <= 23 ? &PCMSK2 : &PCMSK0 )
 #define digitalPinToPCMSKbit(p) ( (p) % 8 )

@@ -29,7 +29,7 @@
 // for the analog output (software PWM).  Analog input
 // pins are a separate set.
 
-// ATMEL ATMEGA644P / SANGUINO (also works for ATmega1284P)
+// ATMEL ATmega1284P (should also work for SANGUINO/ATmega644P)
 //
 //                   +---\/---+
 //  INT0 (D 0) PB0  1|        |40  PA0 (AI 0 / D31)
@@ -59,10 +59,10 @@
 
 #define NUM_DIGITAL_PINS            32
 #define NUM_ANALOG_INPUTS           8
-#define analogInputToDigitalPin(p)  ((p < NUM_ANALOG_INPUTS) ? 31 - (p) : -1)
-#define digitalPinHasPWM(p)         ((p) == 3 || (p) == 4 || (p) == 6 || (p) == 7 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15)
-#define digitalPinToAnalogPin(p)    ( (p) >= 24 && (p) <= 31 ? (p) - 24 : -1 )
-#define analogPinToChannel(p)       ((p) < NUM_ANALOG_INPUTS) ? (p) : ((p)  >=  24) ? (31 - (p)) : -1    //required macro for mighty-1284p core
+#define analogInputToDigitalPin(p)  ( (p) < NUM_ANALOG_INPUTS ? 31 - (p) : -1 )
+#define digitalPinToAnalogPin(p)    ( (p) >= 24 && (p) <= 31 ? 31 - (p) : -1 )
+#define analogPinToChannel(p)       ( (p) < NUM_ANALOG_INPUTS ? (p) : (p) >= 24 ? 31 - (p) : -1 )    //required macro for mighty-1284p core
+#define digitalPinHasPWM(p)         ( (p) == 3 || (p) == 4 || (p) == 6 || (p) == 7 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15 )
 
 static const uint8_t SS   = 4;
 static const uint8_t MOSI = 5;
@@ -71,21 +71,21 @@ static const uint8_t SCK  = 7;
 
 static const uint8_t SDA = 17;
 static const uint8_t SCL = 16;
-static const uint8_t LED_BUILTIN = 7;
+static const uint8_t LED_BUILTIN = 13;
 
-static const uint8_t A0 = 24;
-static const uint8_t A1 = 25;
-static const uint8_t A2 = 26;
-static const uint8_t A3 = 27;
-static const uint8_t A4 = 28;
-static const uint8_t A5 = 29;
-static const uint8_t A6 = 30;
-static const uint8_t A7 = 31;
+static const uint8_t A0 = 31;
+static const uint8_t A1 = 30;
+static const uint8_t A2 = 29;
+static const uint8_t A3 = 28;
+static const uint8_t A4 = 27;
+static const uint8_t A5 = 26;
+static const uint8_t A6 = 25;
+static const uint8_t A7 = 24;
 
-#define digitalPinToPCICR(p)    (((p) >= 0 && (p) < NUM_DIGITAL_PINS) ? (&PCICR) : ((uint8_t *)0))
-#define digitalPinToPCICRbit(p) (((p) <= 7) ? 1 : (((p) <= 15) ? 3 : (((p) <= 23) ? 2 : 0)))
-#define digitalPinToPCMSK(p)    (((p) <= 7) ? (&PCMSK2) : (((p) <= 13) ? (&PCMSK0) : (((p) <= 21) ? (&PCMSK1) : ((uint8_t *)0))))
-#define digitalPinToPCMSKbit(p) ((p) % 8)
+#define digitalPinToPCICR(p)    ( (p) >= 0 && (p) < NUM_DIGITAL_PINS ? &PCICR : (uint8_t *)0 )
+#define digitalPinToPCICRbit(p) ( (p) <= 7 ? 1 : (p) <= 15 ? 3 : (p) <= 23 ? 2 : 0 )
+#define digitalPinToPCMSK(p)    ( (p) <= 7 ? &PCMSK1 : (p) <= 15 ? &PCMSK3 : (p) <= 23 ? &PCMSK2 : &PCMSK0 )
+#define digitalPinToPCMSKbit(p) ( (p) <= 23 ? (p) % 8 : ( 31 - (p) ) % 8 )
 
 #define PA 1
 #define PB 2
@@ -151,14 +151,14 @@ static const uint8_t A7 = 31;
 #define BIT_D21 5
 #define BIT_D22 6
 #define BIT_D23 7
-#define BIT_D24 0
-#define BIT_D25 1
-#define BIT_D26 2
-#define BIT_D27 3
-#define BIT_D28 4
-#define BIT_D29 5
-#define BIT_D30 6
-#define BIT_D31 7
+#define BIT_D24 7
+#define BIT_D25 6
+#define BIT_D26 5
+#define BIT_D27 4
+#define BIT_D28 3
+#define BIT_D29 2
+#define BIT_D30 1
+#define BIT_D31 0
 
 // macro equivalents of PROGMEM arrays port_to_mode_PGM[] etc. below
 #define PORT_TO_MODE(x) (x == 1 ? &DDRA : (x == 2 ? &DDRB : (x == 3 ? &DDRC : (x == 4 ? &DDRD : NOT_A_PORT)))) 
