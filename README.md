@@ -13,7 +13,7 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 
 ## Revision history <a name="revision history"></a>
 **06May2015 Mark Pendrith (aka pico--)**
-- v1.6.3 branch created
+- v1.6.3 branch created for Arduino IDE 1.6.x support
 **29Oct2014 Jack Christensen**
 - The following changes are in a branch named v1.0.6. The v1.0.5 branch will remain the default for the time being, until the v1.0.6 branch can be tested further.
 - With the release of Arduino 1.0.6, changes to the core files are no longer needed to support the ATmega1284P. Deleted the Mighty 1284P cores directory pointed all boards in the boards.txt file to the regular Arduino core.
