@@ -1,10 +1,11 @@
 ##############################################################
 
 mighty_opt.name=Mighty 1284p 16MHz using Optiboot
+mighty_opt.upload.tool=avrdude
 mighty_opt.upload.protocol=arduino
 mighty_opt.upload.maximum_size=130048
 mighty_opt.upload.speed=115200
-mighty_opt.bootloader.low_fuses=0xff
+mighty_opt.bootloader.low_fuses=0xf7
 mighty_opt.bootloader.high_fuses=0xde
 mighty_opt.bootloader.extended_fuses=0xfd
 mighty_opt.bootloader.path=optiboot
@@ -20,10 +21,11 @@ mighty_opt.build.variant=standard
 
 #http://github.com/JChristensen/mini1284
 mightymini.name=Mighty Mini 1284p @ 16MHz, Optiboot @ 1Mbps
+mightymini.upload.tool=avrdude
 mightymini.upload.protocol=arduino
 mightymini.upload.maximum_size=130048
 mightymini.upload.speed=1000000
-mightymini.bootloader.low_fuses=0xff
+mightymini.bootloader.low_fuses=0xf7
 mightymini.bootloader.high_fuses=0xde
 mightymini.bootloader.extended_fuses=0xfd
 mightymini.bootloader.path=optiboot
@@ -38,10 +40,10 @@ mightymini.build.variant=standard
 ##############################################################
 
 avr_developers.name=avr-developers.com pinouts 16MHz using Optiboot
-avr_developers.upload.protocol=arduino
+avr_developers.upload.tool=avrdudeavr_developers.upload.protocol=arduino
 avr_developers.upload.maximum_size=130048
 avr_developers.upload.speed=115200
-avr_developers.bootloader.low_fuses=0xff
+avr_developers.bootloader.low_fuses=0xf7
 avr_developers.bootloader.high_fuses=0xde
 avr_developers.bootloader.extended_fuses=0xfd
 avr_developers.bootloader.path=optiboot
@@ -56,10 +58,11 @@ avr_developers.build.variant=avr_developers
 ##############################################################
 
 bobuino.name=Bobuino
+bobuino.upload.tool=avrdude
 bobuino.upload.protocol=arduino
 bobuino.upload.maximum_size=130048
 bobuino.upload.speed=115200
-bobuino.bootloader.low_fuses=0xff
+bobuino.bootloader.low_fuses=0xf7
 bobuino.bootloader.high_fuses=0xde
 bobuino.bootloader.extended_fuses=0xfd
 bobuino.bootloader.path=optiboot
@@ -75,6 +78,7 @@ bobuino.build.variant=bobuino
 
 #http://github.com/JChristensen/mini1284
 mm8.name=Mighty Mini 1284p @ 8MHz
+mm8.upload.tool=avrdude
 mm8.upload.protocol=arduino
 mm8.upload.maximum_size=130048
 mm8.upload.speed=500000
