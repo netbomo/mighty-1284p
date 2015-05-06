@@ -12,7 +12,7 @@ If you are installing for the older 1.0.5 or 1.0.6 versions of the IDE, use thos
 This is a refreshed version of [maniacbug's mighty-1284p core](https://github.com/maniacbug/mighty-1284p) which was based on Arduino 1.0. With the invaluable help of many kind folks on the Arduino forum, I was able to produce this updated core based on Arduino 1.0.5. (If you're interested, and a bit masochistic, [here](http://forum.arduino.cc/index.php?topic=235521.0) is the rather lengthy discussion that took place during the process of updating the core.)
 
 ## Revision history <a name="revision history"></a>
-**06May2015 Mark Pendrith (aka pico--)
+**06May2015 Mark Pendrith (aka pico--)**
 - v1.6.3 branch created
 **29Oct2014 Jack Christensen**
 - The following changes are in a branch named v1.0.6. The v1.0.5 branch will remain the default for the time being, until the v1.0.6 branch can be tested further.
