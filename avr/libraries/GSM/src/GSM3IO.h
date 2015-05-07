@@ -31,6 +31,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 The latest version of this library can always be found at
 https://github.com/BlueVia/Official-Arduino
 */
+#include "pins_arduino.h"
 #ifdef TTOPEN_V1
 	#define __POWERPIN__ 5
 	#define __RESETPIN__ 6
@@ -56,4 +57,20 @@ https://github.com/BlueVia/Official-Arduino
 	#define __TXPIN__ 3
 	#define __RXPIN__ 8
 	#define __RXINT__ 3
+#elif defined(__AVR_ATmega1284__) || defined(__AVR_ATmega1284P__)\
+|| defined(__AVR_ATmega1284__)\
+|| defined(__AVR_ATmega644P__)\
+|| defined(__AVR_ATmega644__)\
+|| defined(__AVR_ATmega64__)\
+|| defined(__AVR_ATmega32__)\
+|| defined(__AVR_ATmega324__)\
+|| defined(__AVR_ATmega16__)
+
+ #if defined(MIGHTY_1284P_VARIANT)
+#define __TXPIN__ 3
+#define __RXPIN__ 2
+#define __RXINT__ digital_pin_to_pcint[__RXPIN__]
+ #else
+#error No support for this board type found in GSM3SoftSerial.cpp!
+ #endif
 #endif
