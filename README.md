@@ -52,12 +52,13 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 	- sketchbook\hardware\mighty-1284p\avr\boards.txt
 	- sketchbook\hardware\mighty-1284p\.gitignore
 	- sketchbook\hardware\mighty-1284p\README.md
-7. Restart the Arduino IDE.
-8. Select the desired board from the Tools > Board menu and enjoy those extra pins and all that extra memory!
+7. Move any mighty-1284p compatible 3rd party patched libs under [sketchfolder]\libraries as required. (Note: the mighty-1284p compatible "official" patched libs are already set-up to be used as default when using mighty-1284p by being in avr\libraries. If the wrong libs are being used, check to see that there aren't old versions of the patched libs still under [sketchfolder]\libraries, as those take precedence.)
+8. Restart the Arduino IDE.
+9. Select the desired board from the Tools > Board menu and enjoy those extra pins and all that extra memory!
 
 ## Requirements <a name="requirements"></a>
 
-* Works with Arduino 1.6.3. It may work on other versions as early as 1.5.x but these have not been tested.
+* Works with Arduino 1.6.3. It may work on other versions as early as 1.5.x but these have not been tested. For earlier versions of the Arduino IDE, there is also a v1.0.6 branch, and a v1.0.5 branch for 1.0.x (possibly back to 1.0.1) support. Download and install from the appropriate branch as required for the version of IDE.
 * The [USBtinyISP](http://www.adafruit.com/products/46) is advertised as not able to program chips with more than 64K of flash, however there are varying reports of success using it with the ATmega1284P. Sometimes error messages are given but the upload process seems to have worked OK. Be forewarned. YMMV.
 
 ## See also <a name="seealso"></a>
