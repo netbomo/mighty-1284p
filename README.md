@@ -46,7 +46,8 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 5. The download from GitHub will have a dash and branch name appended, so the folder will be named, e.g. mighty-1284p-v1.6.3. Rename the folder to just **mighty-1284p**.
 6. The following folders and files should now exist:
 	- sketchbook\hardware\mighty-1284p\avr\bootloaders
-	- sketchbook\hardware\mighty-1284p\avr\patched-libs
+	- sketchbook\hardware\mighty-1284p\avr\libraries
+	- sketchbook\hardware\mighty-1284p\avr\patched-3rd-party-libs
 	- sketchbook\hardware\mighty-1284p\avr\variants
 	- sketchbook\hardware\mighty-1284p\avr\boards.txt
 	- sketchbook\hardware\mighty-1284p\.gitignore
