@@ -41,17 +41,17 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 
 1. Go to http://github.com/JChristensen/mighty-1284p, click the **Download ZIP** button and save the ZIP file to a convenient location on your computer.
 2. Ensure that the Arduino IDE is **not** running.
-3. Go to your Arduino sketchbook folder. If it does not contain a folder named **hardware**, create one.
+3. Go to your Arduino **hardware** folder.
 4. Unzip the downloaded file into the **hardware** folder.
 5. The download from GitHub will have a dash and branch name appended, so the folder will be named, e.g. mighty-1284p-v1.6.3. Rename the folder to just **mighty-1284p**.
 6. The following folders and files should now exist:
-	- sketchbook\hardware\mighty-1284p\avr\bootloaders
-	- sketchbook\hardware\mighty-1284p\avr\libraries
-	- sketchbook\hardware\mighty-1284p\avr\patched-3rd-party-libs
-	- sketchbook\hardware\mighty-1284p\avr\variants
-	- sketchbook\hardware\mighty-1284p\avr\boards.txt
-	- sketchbook\hardware\mighty-1284p\.gitignore
-	- sketchbook\hardware\mighty-1284p\README.md
+	- hardware\mighty-1284p\avr\bootloaders
+	- hardware\mighty-1284p\avr\libraries
+	- hardware\mighty-1284p\avr\patched-3rd-party-libs
+	- hardware\mighty-1284p\avr\variants
+	- hardware\mighty-1284p\avr\boards.txt
+	- hardware\mighty-1284p\.gitignore
+	- hardware\mighty-1284p\README.md
 7. Move any mighty-1284p compatible 3rd party patched libs under [sketchfolder]\libraries as required. (Note: the mighty-1284p compatible "official" patched libs are already set-up to be used as default when using mighty-1284p by being in avr\libraries. If the wrong libs are being used, check to see that there aren't old versions of the patched libs still under [sketchfolder]\libraries, as those would take precedence.)
 8. Restart the Arduino IDE.
 9. Select the desired board from the Tools > Board menu and enjoy those extra pins and all that extra memory!
