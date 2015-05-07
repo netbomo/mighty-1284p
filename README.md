@@ -50,7 +50,7 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 
 ## Requirements <a name="requirements"></a>
 
-* Works with Arduino 1.0.6.
+* Works with Arduino 1.0.6. For other versions of the Arduino IDE, there is also a v1.0.5 branch, and a v1.6.3 branch for 1.6.x (and possibly some 1.5.x) support. Download and install from the appropriate branch as required for the version of IDE.
 * The [USBtinyISP](http://www.adafruit.com/products/46) is advertised as not able to program chips with more than 64K of flash, however there are varying reports of success using it with the ATmega1284P. Sometimes error messages are given but the upload process seems to have worked OK. Be forewarned. YMMV.
 
 ## See also <a name="seealso"></a>
@@ -61,6 +61,6 @@ http://maniacbug.wordpress.com/2011/11/27/arduino-on-atmega1284p-4/
 
 * **avr-developers.com pinouts 16MHz using Optiboot** - The classic pinouts.
 * **Bobuino** - [CrossRoads' board](http://crossroadsfencing.com/BobuinoRev17/index.html) built for maximum compatibility with Arduino Uno-class shields.
-* **RFX 1284P Development/Deployment Board** (a.k.a. "Skinny Bob") from [Embedded Coolness](http://embeddedcoolness.com/shop/rfx-1284p-devdep-board-w-prototyping-area-nrf24l01-headers-kit/); has prototyping area, nRF24L01 and Arduino shield compatible headers.
+* **RFX 1284P Development/Deployment Board** (a.k.a. "Skinny Bob") from [Embedded Coolness](http://embeddedcoolness.com/shop/rfx-1284p-devdep-board-w-prototyping-area-nrf24l01-headers-kit/); also built for maximum compatibility with Arduino Uno-class shields, has prototyping area, configurable 5V/3v3 voltage selection, and nRF24L01+ support.
 * **Mighty Mini 1284P** - A small breadboard-friendly version of the Mighty 1284p built with SMT components. Open-source design [available on GitHub](http://goo.gl/5fAHca).
 * **"maniacbug" Mighty 1284p 16MHz using Optiboot** - This uses a straightforward pinout that is especially helpful on a breadboard-built unit.
