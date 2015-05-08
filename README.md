@@ -39,7 +39,7 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 
 ## Installation <a name="installation"></a>
 
-1. Go to http://github.com/JChristensen/mighty-1284p, click the **Download ZIP** button and save the ZIP file to a convenient location on your computer.
+1. Go to https://github.com/JChristensen/mighty-1284p/tree/v1.6.3, click the **Download ZIP** button and save the ZIP file to a convenient location on your computer.
 2. Ensure that the Arduino IDE is **not** running.
 3. Go to your Arduino **hardware** folder.
 4. Unzip the downloaded file into the **hardware** folder.
