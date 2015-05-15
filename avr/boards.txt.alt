@@ -1,9 +1,8 @@
-
 # This an alternative boards.txt for mighty-1284p that offers more board/clock settings combinations 
 # for more advanced users. Instead of either one or two preselected clock setting options available
 # from the menu for each board, with this boards.txt there are now all clock settings available for 
 # all boards listed, as the board and the clock setting are selected independently from separate sub-menus.
-# 16Mhz Low Power and 20Mhz Full Swing clock settings have not been tested with all ATmega1284P based
+# 16MHz Low Power and 20MHz Full Swing clock settings have not been tested with all ATmega1284P based
 # boards and may cause unstable operation.
 #
 # Note that the board has to have the matching bootloader burned to the board with an ISP programmer before 
@@ -35,40 +34,40 @@ avr_developers.build.mcu=atmega1284p
 avr_developers.build.core=arduino:arduino
 avr_developers.build.variant=avr_developers
 
-# 16Mhz Full Swing - more resistant to electrical interference than Low Power
-avr_developers.menu.clock.full_swing=16Mhz Full Swing
+# 16MHz Full Swing - more resistant to electrical interference than Low Power
+avr_developers.menu.clock.full_swing=16MHz Full Swing
 avr_developers.menu.clock.full_swing.upload.speed=115200
 avr_developers.menu.clock.full_swing.bootloader.low_fuses=0xf7
 avr_developers.menu.clock.full_swing.bootloader.file=optiboot/optiboot_atmega1284p.hex
 avr_developers.menu.clock.full_swing.build.f_cpu=16000000L
 
-# 16Mhz Full Swing @ 1Mbps
-avr_developers.menu.clock.1M=16Mhz F.S. @ 1Mbps
+# 16MHz Full Swing @ 1Mbps
+avr_developers.menu.clock.1M=16MHz F.S. @ 1Mbps
 avr_developers.menu.clock.1M.upload.speed=1000000
 avr_developers.menu.clock.1M.bootloader.low_fuses=0xf7
 avr_developers.menu.clock.1M.bootloader.file=optiboot/optiboot_mighty1284p_1M.hex
 avr_developers.menu.clock.1M.build.f_cpu=16000000L
 
-# 16Mhz Low Power
-avr_developers.menu.clock.low_power=16Mhz Low Power
+# 16MHz Low Power
+avr_developers.menu.clock.low_power=16MHz Low Power
 avr_developers.menu.clock.low_power.upload.speed=115200
 avr_developers.menu.clock.low_power.bootloader.low_fuses=0xff
 avr_developers.menu.clock.low_power.bootloader.file=optiboot/optiboot_atmega1284p.hex
 avr_developers.menu.clock.low_power.build.f_cpu=16000000L
 
-# 8Mhz Internal Oscillator
-avr_developers.menu.clock.8Mhz=8Mhz Internal
-avr_developers.menu.clock.8Mhz.upload.speed=500000
-avr_developers.menu.clock.8Mhz.bootloader.low_fuses=0xe2
-avr_developers.menu.clock.8Mhz.bootloader.file=optiboot/optiboot_1284p_8MHz_500k.hex
-avr_developers.menu.clock.8Mhz.build.f_cpu=8000000L
+# 8MHz Internal Oscillator
+avr_developers.menu.clock.8MHz=8MHz Internal
+avr_developers.menu.clock.8MHz.upload.speed=500000
+avr_developers.menu.clock.8MHz.bootloader.low_fuses=0xe2
+avr_developers.menu.clock.8MHz.bootloader.file=optiboot/optiboot_1284p_8MHz_500k.hex
+avr_developers.menu.clock.8MHz.build.f_cpu=8000000L
 
-# 20Mhz Full Swing
-avr_developers.menu.clock.20Mhz=20Mhz Full Swing
-avr_developers.menu.clock.20Mhz.upload.speed=115200
-avr_developers.menu.clock.20Mhz.bootloader.low_fuses=0xf7
-avr_developers.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_atmega1284p.hex
-avr_developers.menu.clock.20Mhz.build.f_cpu=20000000L
+# 20MHz Full Swing
+avr_developers.menu.clock.20MHz=20MHz Full Swing
+avr_developers.menu.clock.20MHz.upload.speed=115200
+avr_developers.menu.clock.20MHz.bootloader.low_fuses=0xf7
+avr_developers.menu.clock.20MHz.bootloader.file=optiboot/optiboot_atmega1284p.hex
+avr_developers.menu.clock.20MHz.build.f_cpu=20000000L
 
 ##############################################################
 
@@ -86,40 +85,40 @@ bobuino.build.mcu=atmega1284p
 bobuino.build.core=arduino:arduino
 bobuino.build.variant=bobuino
 
-# 16Mhz Full Swing - more resistant to electrical interference than Low Power
-bobuino.menu.clock.full_swing=16Mhz Full Swing
+# 16MHz Full Swing - more resistant to electrical interference than Low Power
+bobuino.menu.clock.full_swing=16MHz Full Swing
 bobuino.menu.clock.full_swing.upload.speed=115200
 bobuino.menu.clock.full_swing.bootloader.low_fuses=0xf7
 bobuino.menu.clock.full_swing.bootloader.file=optiboot/optiboot_atmega1284p.hex
 bobuino.menu.clock.full_swing.build.f_cpu=16000000L
 
-# 16Mhz Full Swing @ 1Mbps
-bobuino.menu.clock.1M=16Mhz F.S. @ 1Mbps
+# 16MHz Full Swing @ 1Mbps
+bobuino.menu.clock.1M=16MHz F.S. @ 1Mbps
 bobuino.menu.clock.1M.upload.speed=1000000
 bobuino.menu.clock.1M.bootloader.low_fuses=0xf7
 bobuino.menu.clock.1M.bootloader.file=optiboot/optiboot_mighty1284p_1M.hex
 bobuino.menu.clock.1M.build.f_cpu=16000000L
 
-# 16Mhz Low Power
-bobuino.menu.clock.low_power=16Mhz Low Power
+# 16MHz Low Power
+bobuino.menu.clock.low_power=16MHz Low Power
 bobuino.menu.clock.low_power.upload.speed=115200
 bobuino.menu.clock.low_power.bootloader.low_fuses=0xff
 bobuino.menu.clock.low_power.bootloader.file=optiboot/optiboot_atmega1284p.hex
 bobuino.menu.clock.low_power.build.f_cpu=16000000L
 
-# 8Mhz Internal Oscillator
-bobuino.menu.clock.8Mhz=8Mhz Internal
-bobuino.menu.clock.8Mhz.upload.speed=500000
-bobuino.menu.clock.8Mhz.bootloader.low_fuses=0xe2
-bobuino.menu.clock.8Mhz.bootloader.file=optiboot/optiboot_1284p_8MHz_500k.hex
-bobuino.menu.clock.8Mhz.build.f_cpu=8000000L
+# 8MHz Internal Oscillator
+bobuino.menu.clock.8MHz=8MHz Internal
+bobuino.menu.clock.8MHz.upload.speed=500000
+bobuino.menu.clock.8MHz.bootloader.low_fuses=0xe2
+bobuino.menu.clock.8MHz.bootloader.file=optiboot/optiboot_1284p_8MHz_500k.hex
+bobuino.menu.clock.8MHz.build.f_cpu=8000000L
 
-# 20Mhz Full Swing
-bobuino.menu.clock.20Mhz=20Mhz Full Swing
-bobuino.menu.clock.20Mhz.upload.speed=115200
-bobuino.menu.clock.20Mhz.bootloader.low_fuses=0xf7
-bobuino.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_atmega1284p.hex
-bobuino.menu.clock.20Mhz.build.f_cpu=20000000L
+# 20MHz Full Swing
+bobuino.menu.clock.20MHz=20MHz Full Swing
+bobuino.menu.clock.20MHz.upload.speed=115200
+bobuino.menu.clock.20MHz.bootloader.low_fuses=0xf7
+bobuino.menu.clock.20MHz.bootloader.file=optiboot/optiboot_atmega1284p.hex
+bobuino.menu.clock.20MHz.build.f_cpu=20000000L
 
 ##############################################################
 
@@ -138,37 +137,37 @@ mighty.build.mcu=atmega1284p
 mighty.build.core=arduino:arduino
 mighty.build.variant=standard
 
-# 16Mhz Full Swing - more resistant to electrical interference than Low Power
-mighty.menu.clock.full_swing=16Mhz Full Swing
+# 16MHz Full Swing - more resistant to electrical interference than Low Power
+mighty.menu.clock.full_swing=16MHz Full Swing
 mighty.menu.clock.full_swing.upload.speed=115200
 mighty.menu.clock.full_swing.bootloader.low_fuses=0xf7
 mighty.menu.clock.full_swing.bootloader.file=optiboot/optiboot_atmega1284p.hex
 mighty.menu.clock.full_swing.build.f_cpu=16000000L
 
-# 16Mhz Full Swing @ 1Mbps
-mighty.menu.clock.1M=16Mhz F.S. @ 1Mbps
+# 16MHz Full Swing @ 1Mbps
+mighty.menu.clock.1M=16MHz F.S. @ 1Mbps
 mighty.menu.clock.1M.upload.speed=1000000
 mighty.menu.clock.1M.bootloader.low_fuses=0xf7
 mighty.menu.clock.1M.bootloader.file=optiboot/optiboot_mighty1284p_1M.hex
 mighty.menu.clock.1M.build.f_cpu=16000000L
 
-# 16Mhz Low Power
-mighty.menu.clock.low_power=16Mhz Low Power
+# 16MHz Low Power
+mighty.menu.clock.low_power=16MHz Low Power
 mighty.menu.clock.low_power.upload.speed=115200
 mighty.menu.clock.low_power.bootloader.low_fuses=0xff
 mighty.menu.clock.low_power.bootloader.file=optiboot/optiboot_atmega1284p.hex
 mighty.menu.clock.low_power.build.f_cpu=16000000L
 
-# 8Mhz Internal Oscillator
-mighty.menu.clock.8Mhz=8Mhz Internal
-mighty.menu.clock.8Mhz.upload.speed=500000
-mighty.menu.clock.8Mhz.bootloader.low_fuses=0xe2
-mighty.menu.clock.8Mhz.bootloader.file=optiboot/optiboot_1284p_8MHz_500k.hex
-mighty.menu.clock.8Mhz.build.f_cpu=8000000L
+# 8MHz Internal Oscillator
+mighty.menu.clock.8MHz=8MHz Internal
+mighty.menu.clock.8MHz.upload.speed=500000
+mighty.menu.clock.8MHz.bootloader.low_fuses=0xe2
+mighty.menu.clock.8MHz.bootloader.file=optiboot/optiboot_1284p_8MHz_500k.hex
+mighty.menu.clock.8MHz.build.f_cpu=8000000L
 
-# 20Mhz Full Swing
-mighty.menu.clock.20Mhz=20Mhz Full Swing
-mighty.menu.clock.20Mhz.upload.speed=115200
-mighty.menu.clock.20Mhz.bootloader.low_fuses=0xf7
-mighty.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_atmega1284p.hex
-mighty.menu.clock.20Mhz.build.f_cpu=20000000L
+# 20MHz Full Swing
+mighty.menu.clock.20MHz=20MHz Full Swing
+mighty.menu.clock.20MHz.upload.speed=115200
+mighty.menu.clock.20MHz.bootloader.low_fuses=0xf7
+mighty.menu.clock.20MHz.bootloader.file=optiboot/optiboot_atmega1284p.hex
+mighty.menu.clock.20MHz.build.f_cpu=20000000L
