@@ -1,3 +1,4 @@
+
 # This an alternative boards.txt for mighty-1284p that offers more board/clock settings combinations 
 # for more advanced users. Instead of either one or two preselected clock setting options available
 # from the menu for each board, with this boards.txt there are now all clock settings available for 
