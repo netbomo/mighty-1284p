@@ -12,6 +12,12 @@ If you are installing for the older 1.0.5 or 1.0.6 versions of the IDE, use thos
 This is a refreshed version of [maniacbug's mighty-1284p core](https://github.com/maniacbug/mighty-1284p) which was based on Arduino 1.0. With the invaluable help of many kind folks on the Arduino forum, I was able to produce this updated core. (If you're interested, and a bit masochistic, [here](http://forum.arduino.cc/index.php?topic=235521.0) is the rather lengthy discussion that took place during the process of updating the core.)
 
 ## Revision history <a name="revision history"></a>
+**15Jun2015 Mark Pendrith (aka pico--)**
+- added support for variant "Sleeping Beauty"
+- updated boards.txt.alt to include menu options for enabling/disabling JTAG, as well as A4/A5 functionality for Sleeping Beauty
+- updated boards.txt.alt clock speed options to disallow bootloader options that flash LED on PB7 for boards that do not have the board LED connected to PB7
+- added platform.local.txt to restore Mighty-1284p separator heading in Tools|Board list
+
 **06May2015 Mark Pendrith (aka pico--)**
 - v1.6.3 branch created for Arduino IDE 1.6.x support
 

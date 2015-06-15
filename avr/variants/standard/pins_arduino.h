@@ -67,6 +67,15 @@ static const uint8_t A7 = 31;
 #define digitalPinToPCICRbit(p) ( (p) <= 7 ? 1 : (p) <= 15 ? 3 : (p) <= 23 ? 2 : 0 )
 #define digitalPinToPCMSK(p)    ( (p) <= 7 ? &PCMSK1 : (p) <= 15 ? &PCMSK3 : (p) <= 23 ? &PCMSK2 : &PCMSK0 )
 #define digitalPinToPCMSKbit(p) ( (p) % 8 )
+// return associated INTx number for associated/valid pins,
+// otherwise NOT_AN_INTERRUPT
+#define digitalPinToInterrupt(p) \
+	(\
+	(p) == 10 ? 0 : \
+	(p) == 11 ? 1 : \
+	(p) == 2 ? 2 : \
+	NOT_AN_INTERRUPT)
+
 
 #define PA 1
 #define PB 2

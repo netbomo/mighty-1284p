@@ -64,6 +64,16 @@ static const uint8_t A7 = 21;
 #define digitalPinToPCMSK(p)    ifpin(p,(uint8_t *)PORT_NDX_TO_PCMSK(digital_pin_to_pcint[p] >> 3),(uint8_t *)0)
 #define digitalPinToPCMSKbit(p) ifpin(p,digital_pin_to_pcint[p] & 0x7,0)
 
+// return associated INTx number for associated/valid pins,
+// otherwise NOT_AN_INTERRUPT
+#define digitalPinToInterrupt(p) \
+	(\
+	(p) == 2 ? 0 : \
+	(p) == 3 ? 1 : \
+	(p) == 6 ? 2 : \
+	NOT_AN_INTERRUPT)
+
+
 #define PA 1
 #define PB 2
 #define PC 3
