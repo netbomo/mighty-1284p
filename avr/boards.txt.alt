@@ -91,7 +91,7 @@ avr_developers.menu.clock.low_power.build.f_cpu=16000000L
 avr_developers.menu.clock.20Mhz=20Mhz Full Swing
 avr_developers.menu.clock.20Mhz.upload.speed=115200
 avr_developers.menu.clock.20Mhz.bootloader.low_fuses=0xf7
-avr_developers.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_atmega1284p.hex
+avr_developers.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_1284p_20MHz_noled.hex
 avr_developers.menu.clock.20Mhz.build.f_cpu=20000000L
 
 ##############################################################
@@ -159,7 +159,7 @@ bobuino.menu.clock.8Mhz.build.f_cpu=8000000L
 bobuino.menu.clock.20Mhz=20Mhz Full Swing
 bobuino.menu.clock.20Mhz.upload.speed=115200
 bobuino.menu.clock.20Mhz.bootloader.low_fuses=0xf7
-bobuino.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_atmega1284p.hex
+bobuino.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_1284p_20MHz_noled.hex
 bobuino.menu.clock.20Mhz.build.f_cpu=20000000L
 
 ##############################################################
@@ -231,7 +231,7 @@ mighty.menu.clock.low_power.build.f_cpu=16000000L
 mighty.menu.clock.20Mhz=20Mhz Full Swing
 mighty.menu.clock.20Mhz.upload.speed=115200
 mighty.menu.clock.20Mhz.bootloader.low_fuses=0xf7
-mighty.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_atmega1284p.hex
+mighty.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_1284p_20MHz_noled.hex
 mighty.menu.clock.20Mhz.build.f_cpu=20000000L
 
 ##############################################################
@@ -300,7 +300,7 @@ mm.menu.clock.8Mhz.build.f_cpu=8000000L
 mm.menu.clock.20Mhz=20Mhz Full Swing
 mm.menu.clock.20Mhz.upload.speed=115200
 mm.menu.clock.20Mhz.bootloader.low_fuses=0xf7
-mm.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_atmega1284p.hex
+mm.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_1284p_20MHz_noled.hex
 mm.menu.clock.20Mhz.build.f_cpu=20000000L
 
 ##############################################################
@@ -376,7 +376,7 @@ sleepingbeauty.menu.clock.8Mhz.build.f_cpu=8000000L
 sleepingbeauty.menu.clock.20Mhz=20Mhz Full Swing
 sleepingbeauty.menu.clock.20Mhz.upload.speed=115200
 sleepingbeauty.menu.clock.20Mhz.bootloader.low_fuses=0xf7
-sleepingbeauty.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_atmega1284p.hex
+sleepingbeauty.menu.clock.20Mhz.bootloader.file=optiboot/optiboot_1284p_20MHz_noled.hex
 sleepingbeauty.menu.clock.20Mhz.build.f_cpu=20000000L
 
 ##############################################################
