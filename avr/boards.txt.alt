@@ -47,7 +47,7 @@ avr_developers.build.board=1284P_AVR_DEVELOPERS
 menu.jtag=JTAG
 
 avr_developers.menu.jtag.disabled=JTAG disabled
-avr_developers.menu.jtag.enabled.bootloader.high_fuses=0xde
+avr_developers.menu.jtag.disabled.bootloader.high_fuses=0xde
 
 avr_developers.menu.jtag.enabled=JTAG enabled
 avr_developers.menu.jtag.enabled.bootloader.high_fuses=0x9e
@@ -120,7 +120,7 @@ bobuino.build.board=1284P_BOBUINO
 menu.jtag=JTAG
 
 bobuino.menu.jtag.disabled=JTAG disabled
-bobuino.menu.jtag.enabled.bootloader.high_fuses=0xde
+bobuino.menu.jtag.disabled.bootloader.high_fuses=0xde
 
 bobuino.menu.jtag.enabled=JTAG enabled
 bobuino.menu.jtag.enabled.bootloader.high_fuses=0x9e
@@ -187,7 +187,7 @@ mighty.build.board=1284P_STANDARD
 menu.jtag=JTAG
 
 mighty.menu.jtag.disabled=JTAG disabled
-mighty.menu.jtag.enabled.bootloader.high_fuses=0xde
+mighty.menu.jtag.disabled.bootloader.high_fuses=0xde
 
 mighty.menu.jtag.enabled=JTAG enabled
 mighty.menu.jtag.enabled.bootloader.high_fuses=0x9e
@@ -259,7 +259,7 @@ mm.build.board=1284P_STANDARD
 menu.jtag=JTAG
 
 mm.menu.jtag.disabled=JTAG disabled
-mm.menu.jtag.enabled.bootloader.high_fuses=0xde
+mm.menu.jtag.disabled.bootloader.high_fuses=0xde
 
 mm.menu.jtag.enabled=JTAG enabled
 mm.menu.jtag.enabled.bootloader.high_fuses=0x9e
@@ -337,7 +337,7 @@ sleepingbeauty.menu.a4a5jumper.i2c.build.extra_flags=-D_SB_BOARD_A4A5_I2C
 menu.jtag=JTAG
 
 sleepingbeauty.menu.jtag.disabled=JTAG disabled
-sleepingbeauty.menu.jtag.enabled.bootloader.high_fuses=0xde
+sleepingbeauty.menu.jtag.disabled.bootloader.high_fuses=0xde
 
 sleepingbeauty.menu.jtag.enabled=JTAG enabled
 sleepingbeauty.menu.jtag.enabled.bootloader.high_fuses=0x9e
