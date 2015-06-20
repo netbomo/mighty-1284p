@@ -310,7 +310,7 @@ sleepingbeauty.name=Sleeping Beauty
 
 sleepingbeauty.upload.tool=arduino:avrdude
 sleepingbeauty.upload.protocol=arduino
-slwwpingbeauty.upload.maximum_data_size=16384
+sleepingbeauty.upload.maximum_data_size=16384
 sleepingbeauty.upload.maximum_size=130048
 
 sleepingbeauty.bootloader.tool=arduino:avrdude
