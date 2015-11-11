@@ -13,7 +13,8 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 
 ## Revision history <a name="revision history"></a>
 **11Nov2015 Mark Pendrith (aka pico--)**
-- updated Installation instruction to deal with possible Linrary Manager conflicts
+- updated Installation instruction to deal with possible Library Manager conflicts
+
 **15Jun2015 Mark Pendrith (aka pico--)**
 - added support for variant "Sleeping Beauty"
 - updated boards.txt.alt to include menu options for enabling/disabling JTAG, as well as A4/A5 functionality for Sleeping Beauty
