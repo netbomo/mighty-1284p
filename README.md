@@ -60,21 +60,15 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 	- hardware\mighty-1284p\.gitignore
 	- hardware\mighty-1284p\README.md
 7. The mighty-1284p compatible "official" patched libs are located to be used as default when a mighty-1284p board is selected in the **Board** menu by being in **hardware\mighty-1284p\avr\libraries**. **However**, be aware that a version of any of these libraries located in **[sketchfolder]\libraries** will take precedence over the corresponding mighty-1284p patched version:
-
     - Ethernet  
     - Firmata  
     - GSM  
     - SD  
     - Servo
-
 Unfortunately, in its present design (IDE 1.6.5) **Library Manager** installs and updates libraries to **[sketchfolder]\libraries**. This obviously presents a potential problem if you are using **Library Manager**. The following is the recommended work-around:
-
 If there are any of the above-named libraries installed in **[sketchfolder]\libraries**, then move those libraries from **[sketchfolder]\libraries** to **[Arduino install folder]\libraries**. This will then allow the mighty-1284p patched libraries to take precedence when (but only when) a mighty-1284p board is selected.
-
 Finally, note this manual move of the libraries from **[sketchfolder]\libraries** to **[Arduino install folder]\libraries** will need to be repeated after any updating any of the named libraries using **Library Manager**.
-
 Hopefully, as the design of **Library Manager** is improved, this issue and inconvenience will disappear in future revisions of the IDE.
-
 8. Once all the libraries are verified to be in their appropriate locations, restart the Arduino IDE.  
 9. Select the desired board from the Tools > Board menu and enjoy those extra pins and all that extra memory!  
 
