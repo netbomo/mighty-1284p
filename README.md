@@ -12,6 +12,8 @@ If you are installing for the older 1.0.5 or 1.0.6 versions of the IDE, use thos
 This is a refreshed version of [maniacbug's mighty-1284p core](https://github.com/maniacbug/mighty-1284p) which was based on Arduino 1.0. With the invaluable help of many kind folks on the Arduino forum, I was able to produce this updated core. (If you're interested, and a bit masochistic, [here](http://forum.arduino.cc/index.php?topic=235521.0) is the rather lengthy discussion that took place during the process of updating the core.)
 
 ## Revision history <a name="revision history"></a>
+**11Nov2015 Mark Pendrith (aka pico--)**
+- updated Installation instruction to deal with possible Linrary Manager conflicts
 **15Jun2015 Mark Pendrith (aka pico--)**
 - added support for variant "Sleeping Beauty"
 - updated boards.txt.alt to include menu options for enabling/disabling JTAG, as well as A4/A5 functionality for Sleeping Beauty
@@ -46,11 +48,17 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 ## Installation <a name="installation"></a>
 
 1. Go to https://github.com/JChristensen/mighty-1284p/tree/v1.6.3, click the **Download ZIP** button and save the ZIP file to a convenient location on your computer.
+
 2. Ensure that the Arduino IDE is **not** running.
+
 3. Go to your Arduino **hardware** folder.
+
 4. Unzip the downloaded file into the **hardware** folder.
+
 5. The download from GitHub will have a dash and branch name appended, so the folder will be named, e.g. mighty-1284p-v1.6.3. Rename the folder to just **mighty-1284p**.
+
 6. The following folders and files should now exist:
+
 	- hardware\mighty-1284p\avr\bootloaders
 	- hardware\mighty-1284p\avr\libraries
 	- hardware\mighty-1284p\avr\patched-3rd-party-libs
@@ -59,7 +67,9 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
 	- hardware\mighty-1284p\avr\boards.txt.alt
 	- hardware\mighty-1284p\.gitignore
 	- hardware\mighty-1284p\README.md
+
 7. The mighty-1284p compatible "official" patched libs are located to be used as default when a mighty-1284p board is selected in the **Board** menu by being in **hardware\mighty-1284p\avr\libraries**. **However**, be aware that a version of any of these libraries located in **[sketchfolder]\libraries** will take precedence over the corresponding mighty-1284p patched version:
+
     - Ethernet  
     - Firmata  
     - GSM  
