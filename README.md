@@ -65,12 +65,18 @@ This is a refreshed version of [maniacbug's mighty-1284p core](https://github.co
     - GSM  
     - SD  
     - Servo
+
 Unfortunately, in its present design (IDE 1.6.5) **Library Manager** installs and updates libraries to **[sketchfolder]\libraries**. This obviously presents a potential problem if you are using **Library Manager**. The following is the recommended work-around:
+
 If there are any of the above-named libraries installed in **[sketchfolder]\libraries**, then move those libraries from **[sketchfolder]\libraries** to **[Arduino install folder]\libraries**. This will then allow the mighty-1284p patched libraries to take precedence when (but only when) a mighty-1284p board is selected.
+
 Finally, note this manual move of the libraries from **[sketchfolder]\libraries** to **[Arduino install folder]\libraries** will need to be repeated after any updating any of the named libraries using **Library Manager**.
+
 Hopefully, as the design of **Library Manager** is improved, this issue and inconvenience will disappear in future revisions of the IDE.
-8. Once all the libraries are verified to be in their appropriate locations, restart the Arduino IDE.  
-9. Select the desired board from the Tools > Board menu and enjoy those extra pins and all that extra memory!  
+
+Once all the libraries are verified to be in their appropriate locations, restart the Arduino IDE.  
+
+Select the desired board from the Tools > Board menu and enjoy those extra pins and all that extra memory!  
 
 Note: There is an alternative version of the boards.txt file supplied named boards.txt.alt. It provides more combinations of boards and clock speeds than the standard boards.txt selection menu. It uses a two-step selection of board type and then clock-speed via a submenu. As this differs from the standard boards.txt format, it is provided as an option for those users with more specialized needs, while the default boards.txt retains the more familiar style of interface, to minimise any potential for confusion.
 
