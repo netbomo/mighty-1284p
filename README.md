@@ -94,7 +94,7 @@ To enable the alternate version, rename boards.txt to boards.txt.org, and then r
 
 ## Requirements <a name="requirements"></a>
 
-* Works with Arduino 1.6.3. It may work on other versions as early as 1.5.x but these have not been tested. For earlier versions of the Arduino IDE, there is also a v1.0.6 branch, and a v1.0.5 branch for 1.0.x (possibly back to 1.0.1) support. Download and install from the appropriate branch as required for the version of IDE.
+* Works with Arduino 1.6.3. and later. It may work on other versions as early as 1.5.x but these have not been tested. For earlier versions of the Arduino IDE, there is also a v1.0.6 branch, and a v1.0.5 branch for 1.0.x (possibly back to 1.0.1) support. Download and install from the appropriate branch as required for the version of IDE.
 * The [USBtinyISP](http://www.adafruit.com/products/46) is advertised as not able to program chips with more than 64K of flash, however there are varying reports of success using it with the ATmega1284P. Sometimes error messages are given but the upload process seems to have worked OK. Be forewarned. YMMV.
 
 ## See also <a name="seealso"></a>
