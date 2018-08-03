@@ -149,7 +149,7 @@ sleepingbeauty.build.board=1284P_SLEEPINGBEAUTY
 ##############################################################
 
 windlogger.name=Windlogger digital Board, 16MHz using Optiboot
-# Windlogger: http://crossroadsfencing.com/BobuinoRev17/index.html
+# Windlogger: http://www.github.com/netbomo/windlogger
 
 windlogger.upload.tool=arduino:avrdude
 windlogger.upload.protocol=arduino
